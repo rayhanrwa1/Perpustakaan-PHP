@@ -25,8 +25,9 @@
                             <!--ambil data dari database, dan tampilkan kedalam tabel-->
                             <?php
                             //buat sql untuk tampilan data, gunakan kata kunci select
+                            //di select from ini untuk mengambil tabel dari data base test tadi dan nama tabel nya yaitu buku, dan akan memanggil semua data buku
                             $sql = "SELECT * FROM buku";
-                            $query = mysqli_query($koneksi, $sql) or die("SQL Anda Salah");
+                            $query = mysqli_query($koneksi, $sql) or die("SQL Anda Salah"); //disini kegunaan I/O untuk menkoneksikan $koneksi dan $sql tadi, $koneksi disini berada di file koneksi.php
                             //Baca hasil query dari databse, gunakan perulangan untuk
                             //Menampilkan data lebh dari satu. disini akan digunakan
                             //while dan fungdi mysqli_fecth_array
